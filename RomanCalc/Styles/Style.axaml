@@ -1,0 +1,34 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Design.PreviewWith>
+        <Border Height="100" Width="100">
+            <Button Classes="gridBtn">I</Button>
+        </Border>
+    </Design.PreviewWith>
+
+    <Style Selector="Button.gridBtn">
+		<Setter Property="VerticalAlignment" Value="Stretch"/>
+		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+		<Setter Property="HorizontalContentAlignment" Value="Center"/>
+		<Setter Property="VerticalContentAlignment" Value="Center"/>
+		<Setter Property="FontSize" Value="36"/>
+		<Setter Property="Background" Value="Black"/>
+		<Setter Property="Foreground" Value="White"/>
+		<Setter Property="Command" Value="{Binding OnClickCommand}"/>
+	</Style>
+	
+	<Style Selector="TextBlock.gridTextBlock">
+		<Setter Property="VerticalAlignment" Value="Stretch"/>
+		<Setter Property="HorizontalAlignment" Value="Stretch"/>
+		<Setter Property="TextAlignment" Value="Center"/>
+		<Setter Property="Padding" Value="0, 15, 0, 0"/>
+		<Setter Property="Text" Value="{Binding Expression}"/>
+		<Setter Property="FontSize" Value="66"/>
+		<Setter Property="Foreground" Value="White"/>
+		<Setter Property="Background" Value="Black"/>
+	</Style>
+
+	<Style Selector="Grid.calc">
+		
+	</Style>
+</Styles>
